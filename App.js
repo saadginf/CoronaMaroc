@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground , ScrollView} from 'react-native';
 import image from './assets/mar.png'
+import { CardViewWithImage } from 'react-native-simple-card-view'
 export default function App() {
   return (
     <View>
@@ -9,7 +10,7 @@ export default function App() {
      source={image}
      style={{
        width:'100%',
-       height:400
+       height:300
      }}
      imageStyle={{
        borderBottomRightRadius:65
@@ -21,10 +22,13 @@ export default function App() {
                   </View>
      </ImageBackground>
       </View>
-      <View>
-        <Text>Saad</Text>
-      </View>
-    </View>
+     
+        
+     
+
+
+
+</View>
   );
 }
 
@@ -45,5 +49,9 @@ const styles = StyleSheet.create({
     fontWeight:'normal',
     color:'white',
     fontFamily:'sans-serif'
+  },
+  Cardcontainer:{
+    flexDirection:'row',
+    justifyContent: 'space-around'
   }
 });
